@@ -1,0 +1,129 @@
+nav {
+    width: 95vw;
+    height: 80px;
+    padding: 0 30px;
+    border-radius: 13px;
+    box-shadow: 0 15px 5px 0 rgba(0, 0, 0, .25);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    z-index: 9;
+}
+
+nav .logo {
+    font-size: 2rem;
+    color: #222;
+}
+
+nav .items {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+
+nav ul a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .7rem 1rem;
+    border-radius: 4px;
+    color: #222;
+}
+
+nav ul a:hover,
+.navMenu a:hover,
+.navMenu a.active,
+nav ul a.active {
+    background-color: #01959a;
+    color: #fff;
+}
+
+
+nav .items button {
+    border-radius: .3rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: .5rem 1rem;
+    color: #222;
+    border: none;
+}
+
+nav .items button:hover {
+    background-color: black;
+    color: #fff;
+}
+
+nav .burger {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 25px;
+    display: none;
+}
+
+.navMenu {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-160%);
+    width: 95vw;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    background-color: #fff;
+    border-radius: 13px;
+    box-shadow: 0 15px 5px 0 rgba(0, 0, 0, .25);
+    transition: 1s all;
+}
+
+.navMenu.active{
+    transform: translateX(-50%);
+}
+
+.navMenu ul {
+    list-style: none;
+}
+
+.navMenu ul a {
+    display: block;
+    text-decoration: none;
+    color: #222;
+    padding: 2rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navMenu button {
+    background-color: #01959a;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 1.2rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: auto;
+    padding: 1.5rem;
+    width: 80%;
+    border: none;
+}
+
+@media screen and (max-width : 992px) {
+    nav .burger {
+        display: block;
+    }
+
+    nav .items {
+        display: none;
+    }
+}

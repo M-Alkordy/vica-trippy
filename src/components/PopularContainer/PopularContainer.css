@@ -1,0 +1,47 @@
+.popular .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+    margin: 0 auto;
+    margin-top: 4.5rem;
+}
+
+.popular .container.reverse{
+    flex-direction: row-reverse;
+}
+
+.popular .container .text{
+    width: 45%;
+    text-align: start;
+}
+
+.popular .container .images{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.popular .container .images img{
+    width: 49%;
+    height: 350px;
+    border-radius: 6px;
+}
+
+.popular .container .images img:last-child{
+    position: absolute;
+    top: -10px;
+    right: 0;
+}
+
+@media screen and (max-width : 992px) {
+    .popular .container{
+        width: 100%;
+        flex-direction: column-reverse !important;
+    }
+
+    .popular .container .text , .popular .container .images{
+        width: 100%;
+    }
+}
