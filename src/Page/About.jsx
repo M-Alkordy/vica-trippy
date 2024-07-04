@@ -4,7 +4,7 @@ import Hero from "../components/Hero/Hero";
 export default function About() {
     return (
         <div>
-            <Hero img="/assets/img/aboutBg.jpg" title="About" btn={{ show: false }} />
+            <Hero img="/vica-trippy/assets/img/aboutBg.jpg" title="About" btn={{ show: false }} />
             <div>
                 <Outlet />
             </div>

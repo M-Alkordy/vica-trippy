@@ -11,7 +11,7 @@ export default function Home() {
     return (
         <>
             <NavBar logo="Trippy" navItems={items} btn="sign up" />
-            <Hero img="/assets/img/heroBg.jpg" title="Your Journey Your Story" desc="Choose Your Favourite Destination." btn={{ show: true, content: "Travel Now" }} />
+            <Hero img="/vica-trippy/assets/img/heroBg.jpg" title="Your Journey Your Story" desc="Choose Your Favourite Destination." btn={{ show: true, content: "Travel Now" }} />
             <PopularDestinations />
         </>
     )

@@ -36,7 +36,7 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <RouterProvider router={router} /> */}
-    <BrowserRouter>
+    <BrowserRouter basename='/vica-trippy/'>
       <App />
     </BrowserRouter>
   </React.StrictMode>,
